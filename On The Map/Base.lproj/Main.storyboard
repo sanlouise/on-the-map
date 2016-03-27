@@ -48,6 +48,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="SIz-N7-Xg1" kind="show" id="Y3v-C4-5DR"/>
+                        <segue destination="MEh-nN-5ao" kind="show" id="Z29-jb-uvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T48-6u-C7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
