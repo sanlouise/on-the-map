@@ -12,6 +12,7 @@
 		B63EBD471CA8454A000A331A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63EBD451CA8454A000A331A /* Main.storyboard */; };
 		B63EBD491CA8454A000A331A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63EBD481CA8454A000A331A /* Assets.xcassets */; };
 		B63EBD4C1CA8454A000A331A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63EBD4A1CA8454A000A331A /* LaunchScreen.storyboard */; };
+		B68E96A51CAA6D4500D3F974 /* OnTheMapConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E96A41CAA6D4500D3F974 /* OnTheMapConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B63EBD481CA8454A000A331A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63EBD4B1CA8454A000A331A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63EBD4D1CA8454A000A331A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68E96A41CAA6D4500D3F974 /* OnTheMapConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTheMapConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B63EBD411CA8454A000A331A /* AppDelegate.swift */,
 				B63EBD431CA8454A000A331A /* ViewController.swift */,
+				B68E96A41CAA6D4500D3F974 /* OnTheMapConstants.swift */,
 				B63EBD451CA8454A000A331A /* Main.storyboard */,
 				B63EBD481CA8454A000A331A /* Assets.xcassets */,
 				B63EBD4A1CA8454A000A331A /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63EBD441CA8454A000A331A /* ViewController.swift in Sources */,
+				B68E96A51CAA6D4500D3F974 /* OnTheMapConstants.swift in Sources */,
 				B63EBD421CA8454A000A331A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				B63EBD521CA8454A000A331A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
