@@ -10,7 +10,7 @@ import Foundation
 
 // Inspired by github.com/RyanCCollins/On-the-Map
 
-/* Helper properties to get a_synchronous queues */
+// Helpers to get a_synchronous queues
 var GlobalMainQueue: dispatch_queue_t {
     return dispatch_get_main_queue()
 }
@@ -32,7 +32,7 @@ var GlobalBackgroundQueue: dispatch_queue_t {
 }
 
 
-/* Define global errors */
+// Display global errors
 struct GlobalErrors : ErrorType {
     
     static let LogoutError = Errors.constructError(domain: "Global", userMessage: "An error occured while trying to logout.")
@@ -46,7 +46,7 @@ struct GlobalErrors : ErrorType {
     
 }
 
-/* Define errors within domain of Parse Client */
+// Display errors within domain of Parse Client
 struct ErrorMessage {
     
     static let JSONSerialization =  "An error occured when sending data to the network."
@@ -57,5 +57,4 @@ struct ErrorMessage {
         static let InvalidResponse = "Unable to log you in due to an invalid response from the server.  Please make sure your username and password are correct and try again."
         static let Network = "Could not connect to the network.  Please try again."
     }
-    
 }
