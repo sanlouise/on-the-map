@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // ****************************************************************************
         // Uncomment and fill in with your Parse credentials:
-        // Parse.setApplicationId("your_application_id", clientKey: "your_client_key")
+         Parse.setApplicationId("QrX47CA9cyuGewLdsL7o5Eb8iug6Em8ye0dnAbIr", clientKey: "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY")
         //
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
@@ -62,31 +62,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        //
-        //  Swift 1.2
-        //
-        //        if application.respondsToSelector("registerUserNotificationSettings:") {
-        //            let userNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
-        //            let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
-        //            application.registerUserNotificationSettings(settings)
-        //            application.registerForRemoteNotifications()
-        //        } else {
-        //            let types = UIRemoteNotificationType.Badge | UIRemoteNotificationType.Alert | UIRemoteNotificationType.Sound
-        //            application.registerForRemoteNotificationTypes(types)
-        //        }
         
-        //
-        //  Swift 2.0
-        //
-        //        if #available(iOS 8.0, *) {
-        //            let types: UIUserNotificationType = [.Alert, .Badge, .Sound]
-        //            let settings = UIUserNotificationSettings(forTypes: types, categories: nil)
-        //            application.registerUserNotificationSettings(settings)
-        //            application.registerForRemoteNotifications()
-        //        } else {
-        //            let types: UIRemoteNotificationType = [.Alert, .Badge, .Sound]
-        //            application.registerForRemoteNotificationTypes(types)
-        //        }
+//          Swift 1.2
+        
+                if application.respondsToSelector("registerUserNotificationSettings:") {
+                    let userNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+                    let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
+                    application.registerUserNotificationSettings(settings)
+                    application.registerForRemoteNotifications()
+                } else {
+                    let types = UIRemoteNotificationType.Badge | UIRemoteNotificationType.Alert | UIRemoteNotificationType.Sound
+                    application.registerForRemoteNotificationTypes(types)
+                }
+        
+//          Swift 2.0
+        
+                if #available(iOS 8.0, *) {
+                    let types: UIUserNotificationType = [.Alert, .Badge, .Sound]
+                    let settings = UIUserNotificationSettings(forTypes: types, categories: nil)
+                    application.registerUserNotificationSettings(settings)
+                    application.registerForRemoteNotifications()
+                } else {
+                    let types: UIRemoteNotificationType = [.Alert, .Badge, .Sound]
+                    application.registerForRemoteNotificationTypes(types)
+                }
         
         return true
     }
@@ -124,14 +123,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    ///////////////////////////////////////////////////////////
-    // Uncomment this method if you want to use Push Notifications with Background App Refresh
-    ///////////////////////////////////////////////////////////
-    // func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-    //     if application.applicationState == UIApplicationState.Inactive {
-    //         PFAnalytics.trackAppOpenedWithRemoteNotificationPayload(userInfo)
-    //     }
-    // }
+    /////////////////////////////////////////////////////////
+//     Uncomment this method if you want to use Push Notifications with Background App Refresh
+    /////////////////////////////////////////////////////////
+     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+         if application.applicationState == UIApplicationState.Inactive {
+             PFAnalytics.trackAppOpenedWithRemoteNotificationPayload(userInfo)
+         }
+     }
     
     //--------------------------------------
     // MARK: Facebook SDK Integration
